@@ -1,0 +1,57 @@
+:root {
+   --main-pink: #ff0060;
+}
+
+body {
+  background-color: black;
+  background-image: url("https://drive.google.com/uc?id=1Fl6kT09l73zeoy4ql7kMRqp44SAscrAo");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  color: white;
+  display: grid;
+  justify-items: center;
+  font-family: 'Raleway';
+}
+
+h1 {
+  font-size: 32px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--main-pink);
+  transition: color 0.3s ease-out;
+}
+
+i {
+  font-weight: 100;
+}
+
+.grid {
+  display: grid;
+ grid-template-columns: repeat(3, 10fr);
+  grid-template-rows: repeat(6, 10fr);
+ grid-column-gap: 1%;
+ justify-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+@media (max-width: 361px) {
+  h1 {
+    font-size: 7vw;
+  }
+  a {
+    font-size: 6vw;
+  }
+}
